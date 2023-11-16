@@ -1,0 +1,9 @@
+.filter__field-container {
+  padding: 16px 0px;
+  border-top: 1px solid var(--my-border-color);
+  .filter__field-title {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 12px;
+  }
+}

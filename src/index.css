@@ -1,0 +1,136 @@
+:root {
+  --my-primary-color: #1a94ff;
+  --my-primary-color-2: #251a57;
+  --my-background-color: #f5f5fa;
+  --my-green: #46bd4c;
+  --my-yellow: #fdd736;
+  --my-purple: #6f2a72;
+  --my-gray: #919090;
+  --my-black: #0a0521;
+  --my-white: #ffffff;
+  --my-red: rgb(255, 57, 69);
+  --text-color: #121b2c;
+  --my-border-color: rgb(242, 242, 242);
+  --my-gradient: linear-gradient(to right, #9669be, #1c80bf);
+  --text-gray-color: #4a4a4a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.small-scroll::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  background: rgba(56, 56, 56, 0.15);
+  border-radius: 999px;
+}
+
+.small-scroll::-webkit-scrollbar-corner {
+  background-color: rgba(56, 56, 56, 0.15) !important;
+}
+
+.small-scroll::-webkit-scrollbar-thumb {
+  background-color: rgba(56, 56, 56, 0.15) !important;
+  border-radius: 999px;
+  height: 5px;
+}
+
+.small-scroll::-webkit-scrollbar-track {
+  background-color: #4b4b4b0c !important;
+  border-radius: 1000px;
+}
+
+.hidden-scroll::-webkit-scrollbar {
+  width: 0px;
+  height: 0px;
+  background: transparent;
+}
+
+.hidden-scroll::-webkit-scrollbar-corner {
+  background-color: transparent !important;
+}
+
+.hidden-scroll::-webkit-scrollbar-thumb {
+  background-color: transparent !important;
+  height: 0px;
+}
+
+.hidden-scroll::-webkit-scrollbar-track {
+  background-color: transparent !important;
+  border-radius: 0px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  margin: 0px;
+  padding: 0px;
+  /* line-height: 1.15; */
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+}
+
+.container {
+  width: 100%;
+  padding-right: -12px;
+  padding-left: -12px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 1366px) {
+  .container {
+    width: 1240px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+}
+
+.App {
+  overflow: hidden;
+}
+
+.auth__form-wrapper {
+  position: fixed;
+  background-color: rgba(94, 94, 94, 0.185);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  z-index: 10000000;
+}
+
+.form-block {
+  padding: 0px 32px;
+  padding-top: 32px;
+  background: white;
+  position: relative;
+}
+
+.close__form-btn {
+  background: none;
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  border: none;
+  cursor: pointer;
+}

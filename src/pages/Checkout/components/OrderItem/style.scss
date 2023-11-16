@@ -1,0 +1,38 @@
+.order__item {
+  margin-bottom: 8px;
+  .order__item-wrapper {
+    display: flex;
+    padding: 16px;
+    border-radius: 4px;
+    border: 1px solid var(--my-border-color)
+  }
+  .thumbnail {
+    width: 120px;
+    height: 100px;
+    flex-shrink: 0;
+    img {
+      width: 120px;
+      height: 100px;
+      object-fit: cover;
+    }
+  }
+  .info-wrapper {
+    flex-grow: 1;
+    margin-right: 16px;
+    margin-left: 12px;
+  }
+  .info-detail__container {
+    .amount {
+      margin-left: 16px;
+      font-weight: bold;
+    }
+  }
+  .info-name {
+    font-size: 16px;
+    opacity: .6;
+    font-weight: lighter;
+  }
+  .info-quantity {
+    font-weight: bold;
+  }
+}

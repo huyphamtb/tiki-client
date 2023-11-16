@@ -1,0 +1,98 @@
+#today_suggest__home {
+  margin: 16px 0;
+  .today_suggest__home__wrap {
+    .today_suggest__header {
+      position: sticky;
+      top: 0;
+      .today_suggest__header__wrap {
+        .today_suggest__header__title {
+          background: #fff;
+          margin-bottom: 4px;
+          padding: 10px 16px;
+          font-size: 20px;
+          line-height: 28px;
+          border-radius: 4px;
+        }
+        .today_suggest__header__tabs {
+          margin: 4px 0;
+          background: rgb(245, 245, 250);
+          .today_suggest__header__tab {
+            height: 100%;
+          }
+        }
+      }
+    }
+    .today_suggest__content {
+      background: #fff;
+      padding: 0 0 24px;
+      border-radius: 4px;
+      .today_suggest__view__more {
+        margin-top: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        a {
+          &:hover {
+            color: rgb(255, 255, 255);
+            background-color: rgb(13, 92, 182);
+            border-color: rgb(13, 92, 182);
+          }
+          display: inline-block;
+          width: 240px;
+          padding: 8px 12px;
+          border-radius: 4px;
+          border: 1px solid rgb(13, 92, 182);
+          color: rgb(13, 92, 182);
+          font-size: 13px;
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  #today_suggest__home {
+    .today_suggest__home__wrap {
+      .today_suggest__header {
+        .today_suggest__header__wrap {
+          .today_suggest__header__title {
+            font-size: 15px;
+            line-height: 24px;
+            padding: 12px;
+          }
+        }
+      }
+      .today_suggest__content {
+        .today_suggest__list {
+          .today_suggest__item {
+            border-bottom: 1px solid rgb(242, 242, 242);
+            border-right: 1px solid rgb(242, 242, 242);
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  #today_suggest__home {
+    .today_suggest__home__wrap {
+      .today_suggest__header {
+        .today_suggest__header__wrap {
+          .today_suggest__header__title {
+            font-size: 15px;
+            line-height: 24px;
+            padding: 12px;
+          }
+          .today_suggest__header__tabs {
+            .ant-row {
+              flex-flow: row nowrap;
+              overflow: auto;
+            }
+          }
+        }
+      }
+    }
+  }
+}

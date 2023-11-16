@@ -1,0 +1,42 @@
+#events_home {
+  margin-bottom: 16px;
+  background: #fff;
+  border-radius: 4px;
+  .events_home__wrap {
+    padding: 16px 0 0;
+    .events_list {
+      display: flex;
+      margin: 0 -12px;
+      .event_item {
+        flex: 0 0 10%;
+        padding: 0 24px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  #events_home {
+    .events_home__wrap {
+      .events_list {
+        overflow: auto;
+        .event_item {
+          flex: 0 0 20%;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  #events_home {
+    .events_home__wrap {
+      .events_list {
+        overflow: auto;
+        .event_item {
+          flex: 0 0 25%;
+        }
+      }
+    }
+  }
+}

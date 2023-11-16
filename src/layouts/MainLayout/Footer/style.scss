@@ -1,0 +1,133 @@
+#footer_main {
+  .footer_main__wrap {
+    display: flex;
+    margin: 0 -16px;
+    padding: 16px 0 0;
+    .footer_main__block {
+      font-size: 12px;
+      flex: 0 0 20%;
+      padding: 0 16px;
+      .title {
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 500;
+        color: rgb(56, 56, 61);
+        margin-bottom: 12px;
+      }
+      .footer_main__list {
+        .footer_main__item {
+          margin-bottom: 8px;
+          line-height: 16px;
+          .hotline {
+            color: rgb(128, 128, 137);
+            a {
+              &:hover {
+                text-decoration: underline;
+                opacity: 0.95;
+              }
+              color: rgb(56, 56, 61);
+              font-weight: 500;
+            }
+            span {
+              display: block;
+            }
+          }
+          a {
+            color: rgb(128, 128, 137);
+            &:hover {
+              text-decoration: underline;
+              opacity: 0.95;
+            }
+          }
+          .security {
+            color: rgb(128, 128, 137);
+            a {
+              &:hover {
+                text-decoration: underline;
+                opacity: 0.95;
+              }
+            }
+          }
+        }
+      }
+      .certification {
+        .certification_list {
+          display: flex;
+          align-items: center;
+          .certification_item {
+            display: block;
+            height: 32px;
+            margin-right: 8px;
+            img {
+              height: 100%;
+            }
+          }
+        }
+      }
+      .payment_list {
+        margin-bottom: 28px;
+        .payment_item {
+          margin: 0 8px 8px 0;
+          display: inline-block;
+          img {
+            height: 32px;
+            width: 32px;
+          }
+        }
+      }
+      .service_ship {
+        .icon {
+          img {
+            height: 33px;
+            width: 68px;
+          }
+        }
+      }
+      .socials_list {
+        display: flex;
+        align-items: center;
+        margin-bottom: 32px;
+        .social_item {
+          display: block;
+          margin-right: 8px;
+          img {
+            width: 32px;
+            height: 33px;
+          }
+        }
+      }
+      .download {
+        .download_wrap {
+          display: flex;
+          align-items: center;
+          .qr {
+            margin-right: 8px;
+            img {
+              width: 80px;
+            }
+          }
+          .apps_list {
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-direction: column;
+            .app_item {
+              display: block;
+              height: 36px;
+              img {
+                width: 121px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  #footer_main {
+    display: none;
+  }
+}

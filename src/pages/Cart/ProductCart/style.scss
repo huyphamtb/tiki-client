@@ -1,0 +1,179 @@
+#product_cart {
+  border-radius: 4px;
+  background: #fff;
+  .product_cart__wrap {
+    .ant-row {
+      align-items: center;
+    }
+    .product_cart__shop {
+      .product_cart__shop__wrap {
+        padding: 19px 16px;
+        .checkbox_product {
+          .checkbox_product__label {
+            display: inline-flex;
+            align-items: center;
+            transform: translateY(4px);
+            img {
+              width: 16px;
+            }
+            .navigation_shop {
+              margin-left: 5px;
+              display: flex;
+              align-items: center;
+              font-weight: 500;
+              font-size: 15px;
+              color: #242424;
+              img {
+                width: 6px;
+                margin-left: 5px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .product_cart__intended {
+      .product_cart__intended__wrap {
+        padding: 16px 16px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .intended_info {
+          display: flex;
+          align-items: center;
+          margin-right: 10px;
+          .intended_info__img {
+            width: 100px;
+            height: 80px;
+            display: inline-block;
+            img {
+              width: 100px;
+              height: 80px;
+              object-fit: cover;
+            }
+          }
+        }
+        .intended_sub__content {
+          flex: 1;
+          .intended_main {
+            flex: 1;
+            display: -webkit-box;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            color: rgb(36, 36, 36);
+            line-height: 20px;
+            &:hover {
+              color: rgb(11, 116, 229);
+            }
+            img {
+              width: 56px;
+              display: inline-block;
+              margin-right: 5px;
+              transform: translateY(-3px);
+            }
+          }
+          .intended_price {
+            .real_price {
+              font-weight: 500;
+              color: rgb(36, 36, 36);
+              font-size: 13px;
+              margin-right: 5px;
+            }
+            .discount_price {
+              color: rgb(153, 153, 153);
+              font-size: 11px;
+              text-decoration: line-through;
+            }
+          }
+          .intended_quantity {
+            width: 84px;
+            .intended_quantity__content {
+              border-radius: 3px;
+              border: 1px solid rgb(200, 200, 200);
+              display: inline-flex;
+              flex-wrap: nowrap;
+            }
+            .intended_delete__response {
+              display: none;
+            }
+          }
+          .final_price {
+            color: #ff424e;
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 20px;
+          }
+        }
+        .intended_delete {
+          align-items: flex-end;
+          display: flex;
+          justify-content: flex-end;
+          cursor: pointer;
+          margin-left: 12px;
+        }
+      }
+    }
+    .product_cart__discount {
+      border-top: 1px solid rgb(242, 242, 242);
+      .product_cart__discount__wrap {
+        padding: 16px 20px;
+        display: flex;
+        align-items: center;
+        .description {
+          color: rgb(36, 36, 36);
+          font-size: 15px;
+          line-height: 24px;
+          margin-right: 12px;
+          white-space: nowrap;
+        }
+        .note {
+          color: rgb(120, 120, 120);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  #product_cart {
+    border-radius: 0;
+    .product_cart__wrap {
+      .product_cart__intended {
+        .product_cart__intended__wrap {
+          .intended_sub__content {
+            .intended_price {
+              .real_price {
+                color: #ff424e;
+                font-size: 15px;
+              }
+            }
+            .intended_quantity {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              width: 100%;
+              .intended_delete__response {
+                display: block;
+              }
+            }
+          }
+          .intended_delete {
+            display: none;
+          }
+        }
+      }
+      .product_cart__discount {
+        .product_cart__discount__wrap {
+          justify-content: space-between;
+          padding: 9px 16px;
+          .description,
+          .note {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}

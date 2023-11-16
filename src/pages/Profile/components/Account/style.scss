@@ -1,0 +1,36 @@
+.account {
+	display: flex;
+	.user__name__fields-container {
+		display: flex;
+	}
+	.account__left {
+		width: 580px;
+		padding: 16px 24px 16px 16px;
+		&-form {
+			margin-top: 20px;
+		}
+		.ant-form-item {
+			margin-bottom: 34px;
+			.ant-input {
+				border-radius: 4px;
+				height: 36px;
+			}
+		}
+		label[title="submit"] {
+			visibility: hidden;
+		}
+		button[type="submit"] {
+			height: 40px;
+		}
+	}
+	&-heading {
+		font-size: 16px;
+		line-height: 24px;
+		color: var(--my-gray);
+		font-weight: 400;
+	}
+	.account__right {
+		width: calc(100% - 580px);
+		padding: 16px 16px 16px 24px;
+	}
+}

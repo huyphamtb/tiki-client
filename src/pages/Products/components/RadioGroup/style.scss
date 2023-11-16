@@ -1,0 +1,11 @@
+.radio__group-wrapper {
+  .radio-list {
+    .ant-radio-group {
+      display: flex;
+      flex-direction: column;
+      label {
+        margin-bottom: 6px;
+      }
+    }
+  }
+}

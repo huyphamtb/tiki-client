@@ -1,0 +1,168 @@
+#sign-page {
+  height: 100vh;
+  background: white;
+  overflow-y: scroll;
+  .logo__wrapper {
+    background: var(--my-primary-color);
+    padding: 16px;
+    border-radius: 12px;
+    display: inline-block;
+    img {
+      transform: translateY(-4px);
+    }
+  }
+  .form-container {
+    -webkit-box-shadow: 0px 0px 34px -8px rgba(46, 46, 46, 0.13);
+    box-shadow: 0px 0px 34px -8px rgba(46, 46, 46, 0.13);
+    width: 550px;
+    padding: 32px 60px;
+    border-radius: 4px;
+    background: white;
+  }
+  .back-to-home-logo {
+    padding: 20px;
+    background: white;
+    img {
+      max-width: 64px;
+      height: auto;
+    }
+  }
+  #register-page,
+  #login-page,
+  #reset-page {
+    background: white;
+  }
+
+  #reset-page {
+    .form-redirect {
+      text-align: center;
+    }
+    .form-header {
+      text-align: center;
+      p {
+        margin: 28px 0px;
+      }
+    }
+  }
+}
+
+.my-form {
+  margin-bottom: 40px;
+  .form-container {
+    margin: 0px auto;
+    max-width: 90%;
+    width: 400px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+    .google-auth {
+      img {
+        width: 16px;
+        height: 16px;
+        transform: translateY(-1px);
+        margin-right: 4px;
+      }
+    }
+    .ant-form-item {
+      margin-bottom: 4px;
+    }
+    .forget-password {
+      flex-grow: 1;
+      text-align: right;
+    }
+    .ant-input {
+      padding: 6px 10px;
+      border-radius: 999px;
+    }
+    .ant-input-affix-wrapper {
+      padding: 0;
+      padding-right: 10px;
+      border-radius: 999px;
+    }
+    .ant-form-item-label > label {
+      font-weight: bold;
+    }
+  }
+
+  .ant-form-item-control-input-content {
+    display: flex;
+  }
+  .form-header {
+    h1 {
+      font-weight: bold;
+      margin: 0;
+      font-size: 1.5rem;
+    }
+    p {
+      opacity: 0.9;
+      margin-top: 8px;
+      font-size: 13px;
+    }
+  }
+  .form-divider {
+    opacity: 0.6;
+    margin: 8px 0px;
+  }
+
+  .form-redirect {
+    font-weight: bold;
+    margin-top: 10px;
+  }
+
+  .form-trademark {
+    opacity: 0.8;
+    flex-grow: 1;
+    display: flex;
+    align-items: flex-end;
+  }
+}
+@media (min-width: 1200px) {
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 1024px) {
+}
+@media (max-width: 991.98px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 575.98px) {
+}
+@media (max-width: 479.98px) {
+  #sign-page {
+    .back-to-home-logo {
+      padding-top: 12px;
+      padding-left: 12px;
+      padding-bottom: 0px;
+    }
+    #register-page,
+    #login-page,
+    #reset-page {
+      align-items: flex-start;
+      height: auto;
+    }
+  }
+  .my-form {
+    .ant-col-sm-24.ant-form-item-label {
+      padding: 0;
+      padding-top: 8px;
+    }
+    .ant-form-item-label > label {
+      height: auto;
+    }
+    .form-container {
+      // height: calc(100vh - 72px);
+      width: 100%;
+      max-width: 100%;
+      padding: 8px 32px;
+      left: 0;
+      // height: 100vh;
+      transform: none;
+      box-shadow: none;
+      -webkit-box-shadow: none;
+      .form-header {
+        text-align: center;
+      }
+    }
+  }
+}

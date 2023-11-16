@@ -1,0 +1,30 @@
+.bill-item {
+	padding: 16px;
+	display: flex;
+	flex-direction: column;
+	.bill-item__status {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	&__status {
+		border-bottom: 1px solid #eee;
+		padding: 12px 8px;
+		color: var(--my-gray);
+		font-weight: 600;
+	}
+	&__footer {
+		align-self: flex-end;
+		.footer__total-price {
+			margin-bottom: 8px;
+			.total-price {
+				color: var(--text-color);
+				font-weight: 600;
+				font-size: 16px;
+			}
+		}
+		button + button {
+			margin: 0 8px;
+		}
+	}
+}

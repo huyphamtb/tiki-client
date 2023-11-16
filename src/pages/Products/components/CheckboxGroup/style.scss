@@ -1,0 +1,9 @@
+.checkbox__group-wrapper {
+  .ant-checkbox-group {
+    display: flex;
+    flex-direction: column;
+    label {
+      margin-bottom: 6px;
+    }
+  }
+}

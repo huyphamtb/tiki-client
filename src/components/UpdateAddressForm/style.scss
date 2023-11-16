@@ -1,0 +1,26 @@
+.address__modal-wrapper {
+  .address__modal-top__action {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .address__model-address__list {
+    .address__list-address__item {
+      display: flex;
+      flex-wrap: nowrap;
+      margin-bottom: 16px;
+      cursor: pointer;
+      p.address__item-text {
+        margin-left: 8px;
+      }
+      :hover p {
+        font-weight: bold;
+      }
+      .address__item-actions {
+        margin-left: 8px;
+        display: flex;
+        transform: translateY(-5px);
+        margin-left: auto;
+      }
+    }
+  }
+}
